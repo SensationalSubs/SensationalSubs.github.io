@@ -1,1 +1,362 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Sensational Subs</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- RadarChart -->
+  <script src="js/Chart.bundle.js"></script>
+  <script src="js/utils.js"></script>
+  <style>
+    body {
+	background-color: #fff3e0;
+    }	
+    canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <!--div class="navbar-fixed"-->
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <!— can add text to the a below —>
+      <a id="logo-container" href="#" class="brand-logo right"></a>
+	  <ul class="left hide-on-med-and-down">
+		<li><a href="#about">About</a></li>
+		<li><a href=#menu>Menu</a></li>
+        <li><a href=#specials>Specials</a></li>
+		  <!--DropDownTrigger-->
+		  <li><a class='dropdown-button btn' href '#' data-activates='dropdown1'>Info</a>
+		  <!--DropDownStructure-->
+		    <ul id='dropdown1' class='dropdown-content'>
+			  <li><a href="https://www.google.com/maps/place/Sensational+Subs/@33.7543718,-84.3904438,17z/data=!3m1!4b1!4m5!3m4!1s0x88f503865e602309:0x70f838a10d5ce673!8m2!3d33.7543674!4d-84.3882551">Directions</a></li>
+			  <li class="divider"></li>
+			  <li><a href="mailto:Sensationsal.Subs@gmail.com">Contact Us</a></li>
+			</ul>
+		  </li>
+	  </ul>
+	  
+      <ul id="nav-mobile" class="side-nav">
+	    <li><div class="userView">
+		  <div class="background">
+		    <img src="images/upstairs.jpg">
+		  </div>
+		  <a href="https://www.linkedin.com/in/tnguyen137"><img class="circle" src="images/sub3.jpg"></a>
+		  <a href="https://www.linkedin.com/in/tnguyen137"><span class="white-text name">Sensational Subs</span></a>
+		</div></li>	
+        <li><a class="waves-effect" href="#about">About</a></li>
+		<li><div class="divider"></div></li>
+		<li><a class="waves-effect" href=“#menu”>Menu</a></li>
+		<li><div class="divider"></div></li>
+		<li><a class="waves-effect" href="mailto:Sensational.Subs@gmail.com">Email Me</a></li>
+		<li><div class="divider"></div></li>
+		<li><a href="https://www.google.com/maps/place/Sensational+Subs/@33.7543718,-84.3904438,17z/data=!3m1!4b1!4m5!3m4!1s0x88f503865e602309:0x70f838a10d5ce673!8m2!3d33.7543674!4d-84.3882551">Directions</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      
+	</div>
+  </nav>
+  <!--/div-->
+  
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Sensational Subs</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Fresh, Fast, Flavorful anyway you slice it!</h5>
+        </div>
+        <div class="row center">
+          <a href="https://www.google.com/maps/place/Sensational+Subs/@33.7543718,-84.3904438,17z/data=!3m1!4b1!4m5!3m4!1s0x88f503865e602309:0x70f838a10d5ce673!8m2!3d33.7543674!4d-84.3882551" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Directions</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/upstairs.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <!-- About Me Section -->
+  <div id="about" div class="section scrollspy">
+  
+  <div class="container">
+    <div class="section">
+	  <div class="col" style="text-align: center;">
+	    <a href=#><img class="circle" src="images/sub3.jpg"></a>
+	    <h5 class="center">Welcome!</h5>
+        <p class="light">We are a deli style sandwich shop in the heart of Atlanta that have been in business for over 25 years.  We pride ourselves in being able to provide food services to the students at Georgia State University as well as the businesses around Woodruff Park.  Whether you are looking for a quick lunch or a place to unwind with a couple of beers come visit us and see why we have been around for so long!</p>
+      </div>
+	  <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons"></i></h2>
+            <h5 class="center">Where I've been</h5>
+
+            <p class="light">Prior to attending Georgia Tech I was a graduate from Georgia State University with a BA in Marketing in 2011.  After graduating I started my businness career as an account manager and it was during the holiday season a few years ago that I wanted to go back to school and pursue something more challenging. Thus, I went to pursue a CS degree at Georgia Tech.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons"></i></h2>
+            <h5 class="center">Where I am</h5>
+
+            <p class="light">Now that I am almost a graduate from Georgia Tech, I am working on developing my skills further by taking classes that pertain to what I would like to do such as Android Development and Design Fundamentals.  I am also still employed as an account manager while I am pursuing more education that will help acquire a career in the tech industry.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons"></i></h2>
+            <h5 class="center">Where I want to be</h5>
+
+            <p class="light">With skills in development, problem solving, and object oriented programming using various languages such as Python, C#, and Java enstilled in me from school I am aiming to futher increase my knowledge and expertise. I wish to utilize what I have learned in school along with my experience to pursue a career in the tech industry and provide my knowledge and expertise in both CS and Business.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/kitchen.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+  <!-- Menu Section -->
+<div id=menu div class="section scrollspy">
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Menu</h4>
+		  <hr>
+		  <div class="row">
+		    <div class="col s12 m12 l12 portfolio-holder">
+              
+	      <iframe src="https://drive.google.com/file/d/0B9fF4WFCYLxNMTVOaUZ5UDhpVWc/preview" width="640" height=800></iframe>
+            </div>
+		  </div>		
+		</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/diningroom.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+<!-- Skills Section -->
+<div id=specials div class="section scrollspy">
+  <div class="container">
+    <div class="section" style="text-align: center;">
+      <!--div class="container"-->
+        <!--div style="text-align: center;"-->
+          <!--h3><i class="mdi-content-send brown-text"></i></he-->
+          <h4>Specials</h4>
+		  <hr>
+            	  	
+		<!--/div-->
+      <!--/div-->
+    </div>
+    <div class="row center">
+      <div style="text-align: right">
+        <canvas id="canvas" height="150"></canvas>
+      </div>	
+    </div>
+  </div>
+</div>  
+  
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text"></h5>
+          <p class="grey-text text-lighten-4"></p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Social</h5>
+          <ul>
+            <li><a class="white-text" href="http://github.com/tnguyen137">GitHub</a></li>
+            <li><a class="white-text" href="https://www.linkedin.com/in/tnguyen137">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Contact</h5>
+          <ul>
+            <li><a class="white-text" href="#!">678-431-7046</a></li>
+            <li><a class="white-text" href="mailto:Sensational.Subs@gmail.com">E-Mail</a></li>
+ 
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="https://www.linkedin.com/in/tnguyen137">Thi Nguyen</a></li>
+      </div>
+	</div>
+  </footer>
+   
+  <script>
+    var randomScalingFactor = function() {
+        return Math.round(Math.random() * 100);
+    };
+
+    var color = Chart.helpers.color;
+    var config = {
+        type: 'radar',
+        data: {
+            labels: ["OOP", ["Data", "Structures"],"Java", "Python", "C#", "Html", "CSS", "JavaScript", ["Relational", "Database"]],
+            datasets: [{
+                label: "Skill Levels",
+                backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+                borderColor: window.chartColors.red,
+                pointBackgroundColor: window.chartColors.red,
+                data: [
+                    80,
+                    70,
+                    75,
+                    70, 
+                    60, 
+                    50, 
+                    50, 
+                    50, 
+                    60,
+                ]
+            }]
+        },
+        options: {
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: false,
+                text: 'Skills Radar Chart'
+            },
+            scale: {
+              ticks: {
+                beginAtZero: true,
+                max: 100
+              }
+            }
+        }
+    };
+
+    window.onload = function() {
+        window.myRadar = new Chart(document.getElementById("canvas"), config);
+    };
+
+    document.getElementById('randomizeData').addEventListener('click', function() {
+        config.data.datasets.forEach(function(dataset) {
+            dataset.data = dataset.data.map(function() {
+                return randomScalingFactor();
+            });
+        });
+
+        window.myRadar.update();
+    });
+
+    var colorNames = Object.keys(window.chartColors);
+    document.getElementById('addDataset').addEventListener('click', function() {
+        var colorName = colorNames[config.data.datasets.length % colorNames.length];;
+        var newColor = window.chartColors[colorName];
+
+        var newDataset = {
+            label: 'Dataset ' + config.data.datasets.length,
+            borderColor: newColor,
+            backgroundColor: color(newColor).alpha(0.2).rgbString(),
+            pointBorderColor: newColor,
+            data: [],
+        };
+
+        for (var index = 0; index < config.data.labels.length; ++index) {
+            newDataset.data.push(randomScalingFactor());
+        }
+
+        config.data.datasets.push(newDataset);
+        window.myRadar.update();
+    });
+
+    document.getElementById('addData').addEventListener('click', function() {
+        if (config.data.datasets.length > 0) {
+            config.data.labels.push('dataset #' + config.data.labels.length);
+
+            config.data.datasets.forEach(function (dataset) {
+                dataset.data.push(randomScalingFactor());
+            });
+
+            window.myRadar.update();
+        }
+    });
+
+    document.getElementById('removeDataset').addEventListener('click', function() {
+        config.data.datasets.splice(0, 1);
+        window.myRadar.update();
+    });
+
+    document.getElementById('removeData').addEventListener('click', function() {
+        config.data.labels.pop(); // remove the label first
+
+        config.data.datasets.forEach(function(dataset) {
+            dataset.data.pop();
+        });
+
+        window.myRadar.update();
+    });
+    </script>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"--><!--/script-->
+
+  </body>
+</html>
